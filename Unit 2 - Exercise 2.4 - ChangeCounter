@@ -1,0 +1,40 @@
+import java.util.Scanner;														//Import Scanner functionality
+
+public class ChangeCounter {
+	public static void main(String[] args) {
+
+		Scanner stdin = new Scanner ( System.in );								//Create the scanner
+
+		int total;
+		int pennies;
+		int nickels;
+		int dimes;
+		int quarters;
+		
+		System.out.println();
+		System.out.println("Greetings, allow me to add up your change!");		// Greet and inform the user
+		
+		System.out.println(" How many quarters do you have?");
+		quarters = stdin.nextInt();												//Request input for number of quarters from user
+		quarters = quarters*25;													//Multiply the number of quarters by 25 to convert to cent value
+
+		System.out.println("How many dimes do you have?");
+		dimes = stdin.nextInt();
+		dimes = dimes*10;
+
+		System.out.println("How many nickels do you have?");
+		nickels = stdin.nextInt();
+		nickels = nickels*5;
+
+		System.out.println("How many pennies do you have?");
+		pennies = stdin.nextInt();
+
+		total = quarters + dimes + nickels + pennies;							//Calculate the total amount of money in cents
+
+		System.out.println("You have a total of: " + total + " cents!");			//Output the total cents to the user
+
+
+	}
+}
+
+//Program compiled and ran successfully.
