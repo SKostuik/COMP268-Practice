@@ -1,0 +1,58 @@
+import java.util.Scanner;
+
+public class ExerNameSplit {
+	
+	public static void main(String[] args) {
+
+		Scanner stdin = new Scanner ( System.in );
+
+		String fullName;
+		String firstName;
+		String lastName;
+		String space;
+		int i;
+		int nameLength;
+		int fnLength;
+		int lnLength;
+		String initialF;
+		String initialL;
+		//Initialize variables
+
+		System.out.println();	
+		System.out.println();			//double linefeed seperates program from rest of command prompt (style)
+		System.out.println("Please enter your first and last name, divided by a space: ");
+
+
+		fullName = stdin.nextLine();			//Get input for name
+		space = (" ");							//Set variable 'space' to be an empty space
+		i = fullName.indexOf(space);			//Find location of space in fullName
+		firstName = fullName.substring(0,i);	//Set firstName to be substring of fullName from 0 to space.
+
+		nameLength = fullName.length();						
+		lastName = fullName.substring(i,nameLength);		
+		/*  Obtain the length of the full name, the length is also location of last character
+		*   Get last name by taking substring from space to last character 
+		*/
+
+		firstName = firstName.trim();
+		fnLength = firstName.length();
+		lastName = lastName.trim();
+		lnLength = lastName.length();
+		//Trim any spaces from the first and last name, and calculate their lengths
+
+		initialF = firstName.substring(0,1);	
+		initialL = lastName.substring(0,1 );
+		//Obtain the initials the first and last name
+
+		System.out.println();
+		System.out.println("Your first name is " + firstName + ", it is " + fnLength + " characters long." );
+		System.out.println("Your last name is " + lastName + ", it is " + lnLength + " characters long.");
+		System.out.println("Your initials are " + initialF + initialL + ".");
+		System.out.println();		//Seperates program from rest of command prompt (style)
+		//Print the desired outputs
+
+
+	}
+}
+
+//Program compiled and ran successfully
