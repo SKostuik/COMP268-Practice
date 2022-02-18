@@ -1,0 +1,17 @@
+public class randomDice {
+	public static void main(String[] args) {
+
+		int firstDie;			//bug fixed: Tried to set variables as "Int" when "int" was correct.
+		int secondDie;
+		int totalDie;
+
+		firstDie = (int)(Math.random()*6) + 1;
+		secondDie = (int)(Math.random()*6) + 1;
+		totalDie = firstDie + secondDie;
+
+		System.out.println("The first die landed on " + firstDie + ".");
+		System.out.println("The second die has landed on " + secondDie + ".");
+		System.out.println("Your total roll is " +totalDie + ".");
+
+	}
+}
