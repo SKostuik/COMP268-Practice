@@ -3,14 +3,14 @@ import java.util.Scanner;
 public class CapitalName {
 	public static void main(String[] args) {
 
-		Scanner stdin = new Scanner ( System.in );  													//Create the scanner
+		Scanner stdin = new Scanner ( System.in );  							//Create the scanner
 
-		String name;																					//Create the variables to hold the names
+		String name;											//Create the variables to hold the names
 
 		System.out.println("Please enter your name.");
-		name = stdin.next();																			//Request the user's name
+		name = stdin.next();										//Request the user's name
 
-		System.out.print("Hello " + name.toUpperCase() + ". Goodbye " + name.toUpperCase() + "."); 		//Output the users name, capitalized, in a message.
+		System.out.print("Hello " + name.toUpperCase() + ". Goodbye " + name.toUpperCase() + "."); 	//Output the users name, capitalized, in a message.
 
 
 	}
